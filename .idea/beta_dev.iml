@@ -60,6 +60,7 @@
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.10.0, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.9.4, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v3.1.7, RVM: ruby-3.3.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v3.1.7, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.1, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ed25519 (v1.3.0, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.13.1, RVM: ruby-3.3.6) [gem]" level="application" />
@@ -341,7 +342,8 @@
       <value>file://$MODULE_DIR$/vendor/assets</value>
     </entry>
   </component>
-  <component name="RakeTasksCache-v2">
+  <component name="RakeTasksCache-v2" failedReloadsCounter="1">
+    <option name="failedReloadsCounter" value="1" />
     <option name="myRootTask">
       <RakeTaskImpl id="rake">
         <subtasks>
