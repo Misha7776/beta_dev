@@ -90,10 +90,10 @@ production:
   primary: &primary_production
     <<: *default
     url: <%= ENV["DATABASE_URL"] %>
-#  primary_replica:
-#    <<: *primary_production
-#    url: <%#= ENV["DATABASE_REPLICA_URL"] %>
-#    replica: true
+  primary_replica:
+    <<: *primary_production
+    url: <%= ENV["DATABASE_REPLICA_URL"] %>
+    replica: true
   cache:
     <<: *primary_production
     database: beta_dev_production_cache
