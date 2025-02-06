@@ -31,6 +31,12 @@ development:
     username: postgres_readonly
     password: <%= ENV['READONLY_PASSWORD'] %>
     replica: true
+  primary_shard_one:
+    adapter: postgresql
+    database: beta_dev_shard_one
+    username:
+    password: <%= ENV['PASSWORD'] %>
+    migrations_paths: db/shard_one_migrations
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -92,7 +98,6 @@ production:
     url: <%= ENV["DATABASE_URL"] %>
   primary_replica:
     <<: *primary_production
-    url: <%= ENV["DATABASE_REPLICA_URL"] %>
     replica: true
   cache:
     <<: *primary_production
